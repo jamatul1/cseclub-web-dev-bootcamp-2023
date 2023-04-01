@@ -1,0 +1,112 @@
+/* Selectors */
+/* Element Selector 
+  *- select all the element with same tag
+   structure - tagname {} 
+   button {
+  font-size: 2rem;
+  color: blue;
+}
+ */
+
+/* Class Selector */
+/*
+  - select all the element which has that class
+  - structure - .classname {}
+.red-btn {
+  background-color: red;
+}
+.blue-btn {
+  background-color: blue;
+}
+.cyan-btn {
+  background-color: cyan;
+}
+/* Id Selector */
+/* Same as class but Only for special element - one time use
+- structure - #idname
+
+#special-btn {
+  font-size: 2rem;
+  padding: 1rem;
+}
+/* Attribute Selector */
+/* select all the element which has the same attribute value
+for selecting a anchorelement with target attribute which's value is '_blank'
+a[target="_blank"] {
+  color: red;
+}
+/* tagname[attributename="attributevalue"] */
+
+/* structure - [attributename="attributevalue"]
+You can remove tagname if you don't want to be specific
+ [alt="card-img"] {
+  height: 100px;
+  width: 100px;
+}
+/* Combinator Selector */
+
+/* ancestor decendent - struct - ancestor decendent - select all the decendent with the given ancestor
+example: .card .card-title - will select all the .card-title which are inside .card element
+/* parent child - struct - parent > child - select all the child whose parent is the given parent
+example: .card > .card-title - will select all the .card-title which are direct child of .card element
+parent >  child */
+.card-text + a {
+  font-size: 50px;
+}
+/* .card .card-title {
+  font-size: 3rem;
+} */
+
+/*  sibling's are those whose parent are same - in the example .card-body is parent of all .card-title
+.card-text and a element, that's why they are sibling
+
+* General sibling selector - struct - firstsibling ~ secondsibling - will select the secondsibling if it is the sibling of firstone otherwise not
+*Example: .card-title ~ .card-text will select all .card-text which are the siblings of .card-title
+* Adjecent sibling selector - adjecent sibling are those which comes one after another, one should touch other one
+- struct firstone + secondone - all the secondone will be selected if it is adjacent sibling of firstone
+example: .card-title + .card-text - will select .card-text if it is sibling of .card-title
+
+**** Practise all of those selectors if you really want to improve - otherwise everything is useless
+**** For practise purpos you can use all the basic property which has been shown in the class
+examples - font-size:20px, color:red, background-color:red etc
+
+
+
+/* body {
+  text-align: center;
+}
+
+.btn {
+  padding: 15px 40px;
+  color: #fff;
+  background-color: rgb(0, 85, 255);
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: rgb(36, 36, 230);
+  transform: scale(1.1);
+}
+.list > .list-item {
+  color: red;
+} */
+
+/* Box model */
+
+/* Typography */
+
+/* ----------Positioning--------------*/
+
+/* Layout - Flexbox */
+.hover-btn {
+  font-size: 1.5rem;
+  background-color: cyan;
+  padding: 1rem 2rem;
+}
+.hover-btn:hover {
+  background-color: red;
+}
